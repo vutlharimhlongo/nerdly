@@ -144,7 +144,7 @@ const PostItem: React.FC<PostItemContentProps> = ({
                       mr={2}
                     />
                   )}
-                  <Link href={`r/${post.communityId}`}>
+                  <Link href={`${post.communityId}`}>
                     <Text
                       fontWeight={700}
                       _hover={{ textDecoration: "underline" }}

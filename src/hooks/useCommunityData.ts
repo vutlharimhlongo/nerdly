@@ -103,6 +103,7 @@ const useCommunityData = (ssrCommunityData?: boolean) => {
       const batch = writeBatch(firestore);
 
       const newSnippet: CommunitySnippet = {
+        defaultImageURL: community.defaultImageURL,
         communityId: community.id,
         imageURL: community.imageURL || "",
       };
