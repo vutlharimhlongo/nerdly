@@ -144,12 +144,12 @@ const PostItem: React.FC<PostItemContentProps> = ({
                       mr={2}
                     />
                   )}
-                  <Link href={`${post.communityId}`}>
+                  <Link href={`r/${post.communityId}`}>
                     <Text
                       fontWeight={700}
                       _hover={{ textDecoration: "underline" }}
                       onClick={(event) => event.stopPropagation()}
-                    >{`r/${post.communityId}`}</Text>
+                    >{`${post.communityId}`}</Text>
                   </Link>
                   <Icon as={BsDot} color="gray.500" fontSize={8} />
                 </>
